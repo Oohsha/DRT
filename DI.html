@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRT</title>
+  <link rel="stylesheet" href="./css/DI.css">
+  <link rel="shortcut icon" href="./images/DRT-logo.png" type="image/x-icon">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">DRT</div>
+    <nav>
+      <ul>
+        <li><a class="main-nav" href="./main.html">홈</a></li>
+        <li class="drop">
+          <a class="main-nav" href="./DI.html">이어폰</a>
+          <ul class="drop-nav">
+            <li><a href="#pro1">DI21</a></li>
+            <li><a href="#pro2">DI22</a></li>
+            <li><a href="#pro3">DI23</a></li>
+          </ul>
+        </li>
+        <li class="drop">
+          <a class="main-nav" href="#">헤드셋</a>
+          <ul class="drop-nav">
+            <li><a href="#pro1">DHed21</a></li>
+            <li><a href="#pro2">DHed22</a></li>
+            <li><a href="#pro3">DHed23</a></li>
+          </ul>
+        </li>
+        <li class="drop">
+          <a class="main-nav" href="#">핸드폰</a>
+          <ul class="drop-nav">
+            <li><a href="#pro1">DSP21</a></li>
+            <li><a href="#pro2">DSP22</a></li>
+            <li><a href="#pro3">DSP23</a></li>
+          </ul>
+        </li>
+        <li><a class="main-nav" href="./inquiry.html">문의</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main-layout">
+    <main class="main-content">
+      <h1 class="page-title">DRT 프리미엄 오디오</h1>
+
+      <div class="product-nav">
+        <button class="nav-btn active" onclick="showSection('pro1')">무선 이어폰</button>
+        <button class="nav-btn" onclick="showSection('pro2')">프리미엄 헤드셋</button>
+        <button class="nav-btn" onclick="showSection('pro3')">블루투스 스피커</button>
+      </div>
+
+      <a href="./pro.html">
+        <div id="pro1" class="pro-section">
+          <h2 class="section-title">무선 이어폰 시리즈</h2>
+          <div class="product-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <div class="product-placeholder">
+                  <img src="./images/DRT pro1.png" alt="">
+                  </svg>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">DRT AirPods Pro+</h3>
+                <div class="product-price">329,000₩</div>
+                <p class="product-description">차세대 액티브 노이즈 캔슬링과 공간 오디오 기술이 적용된 프리미엄 무선 이어폰</p>
+                <div class="product-features">
+                  <span class="feature-tag">ANC</span>
+                  <span class="feature-tag">무선충전</span>
+                  <span class="feature-tag">IPX4</span>
+                  <span class="feature-tag">30시간</span>
+                </div>
+              </div>
+            </div>
+      </a>
+
+      <div class="product-card">
+        <div class="product-image">
+          <div class="product-placeholder">
+            <svg class="product-icon" fill="currentColor" viewBox="0 0 24 24" style="color: #666;">
+              <path
+                d="M12 1a9 9 0 0 0-9 9v7c0 1.66 1.34 3 3 3h1v-9H5.5v-1a6.5 6.5 0 1 1 13 0v1H17v9h1c1.66 0 3-1.34 3-3v-7a9 9 0 0 0-9-9Z" />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">DRT Buds Ultra</h3>
+          <div class="product-price">249,000₩</div>
+          <p class="product-description">완벽한 핏과 뛰어난 음질을 제공하는 운동용 무선 이어폰</p>
+          <div class="product-features">
+            <span class="feature-tag">스포츠용</span>
+            <span class="feature-tag">고속충전</span>
+            <span class="feature-tag">IP67</span>
+            <span class="feature-tag">24시간</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <div class="product-placeholder">
+            <svg class="product-icon" fill="currentColor" viewBox="0 0 24 24" style="color: #666;">
+              <path
+                d="M12 1a9 9 0 0 0-9 9v7c0 1.66 1.34 3 3 3h1v-9H5.5v-1a6.5 6.5 0 1 1 13 0v1H17v9h1c1.66 0 3-1.34 3-3v-7a9 9 0 0 0-9-9Z" />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">DRT Classic</h3>
+          <div class="product-price">189,000₩</div>
+          <p class="product-description">일상에서 편안하게 사용할 수 있는 베이직 무선 이어폰</p>
+          <div class="product-features">
+            <span class="feature-tag">베이직</span>
+            <span class="feature-tag">경량</span>
+            <span class="feature-tag">IPX4</span>
+            <span class="feature-tag">20시간</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <div class="product-placeholder">
+            <svg class="product-icon" fill="currentColor" viewBox="0 0 24 24" style="color: #666;">
+              <path
+                d="M12 1a9 9 0 0 0-9 9v7c0 1.66 1.34 3 3 3h1v-9H5.5v-1a6.5 6.5 0 1 1 13 0v1H17v9h1c1.66 0 3-1.34 3-3v-7a9 9 0 0 0-9-9Z" />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">DRT Studio</h3>
+          <div class="product-price">389,000₩</div>
+          <p class="product-description">전문 음악가를 위한 스튜디오급 음질의 모니터링 이어폰</p>
+          <div class="product-features">
+            <span class="feature-tag">스튜디오</span>
+            <span class="feature-tag">유선/무선</span>
+            <span class="feature-tag">Hi-Res</span>
+            <span class="feature-tag">40시간</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Premium Headsets Section -->
+      <div id="pro2" class="pro-section" style="display: none;">
+        <h2 class="section-title">프리미엄 헤드셋 시리즈</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg class="product-icon" fill="currentColor" viewBox="0 0 24 24" style="color: #666;">
+                  <path
+                    d="M12 3a7 7 0 0 1 7 7v3h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1H3a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h2v-3a7 7 0 0 1 7-7Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">DRT Gaming Pro</h3>
+              <div class="product-price">599,000₩</div>
+              <p class="product-description">프로게이머를 위한 7.1 가상 서라운드 게이밍 헤드셋</p>
+              <div class="product-features">
+                <span class="feature-tag">7.1서라운드</span>
+                <span class="feature-tag">RGB</span>
+                <span class="feature-tag">고감도마이크</span>
+                <span class="feature-tag">50mm드라이버</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg class="product-icon" fill="currentColor" viewBox="0 0 24 24" style="color: #666;">
+                  <path
+                    d="M12 3a7 7 0 0 1 7 7v3h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1H3a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h2v-3a7 7 0 0 1 7-7Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">DRT Workspace</h3>
+              <div class="product-price">459,000₩</div>
+              <p class="product-description">재택근무와 화상회의에 최적화된 업무용 헤드셋</p>
+              <div class="product-features">
+                <span class="feature-tag">노이즈캔슬링</span>
+                <span class="feature-tag">올데이배터리</span>
+                <span class="feature-tag">멀티포인트</span>
+                <span class="feature-tag">컴포트핏</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg class="product-icon" fill="currentColor" viewBox="0 0 24 24" style="color: #666;">
+                  <path
+                    d="M12 3a7 7 0 0 1 7 7v3h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1H3a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h2v-3a7 7 0 0 1 7-7Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">DRT Audiophile</h3>
+              <div class="product-price">899,000₩</div>
+              <p class="product-description">오디오파일을 위한 오픈백 스튜디오 헤드폰</p>
+              <div class="product-features">
+                <span class="feature-tag">오픈백</span>
+                <span class="feature-tag">Hi-Fi</span>
+                <span class="feature-tag">프리미엄패드</span>
+                <span class="feature-tag">착탈식케이블</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg class="product-icon" fill="currentColor" viewBox="0 0 24 24" style="color: #666;">
+                  <path
+                    d="M12 3a7 7 0 0 1 7 7v3h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1H3a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h2v-3

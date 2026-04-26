@@ -1,0 +1,583 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+header {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 0 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #ffffff, #cccccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+
+.con {
+  display: flex;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.main-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.main-nav:hover::before {
+  left: 100%;
+}
+
+.main-nav:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.drop-nav {
+  display: none;
+  position: absolute;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(20px);
+  min-width: 180px;
+  border-radius: 16px;
+  padding: 10px 0;
+  top: calc(100% + 10px);
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.drop:hover .drop-nav {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.drop-nav li a {
+  color: #cccccc;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 0 8px;
+}
+
+.drop-nav li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* 메인 섹션 */
+section {
+  padding-top: 120px;
+  min-height: 100vh;
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* 제품 이미지 영역 */
+.product-image-area {
+  flex: 1;
+  max-width: 600px;
+}
+
+.main-image-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.main-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+
+.thumbnail-images {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+  opacity: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 제품 정보 영역 */
+.all-con {
+  flex: 1;
+  max-width: 500px;
+}
+
+.pro-con {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pro-con::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.pro-con:hover::before {
+  left: 100%;
+}
+
+.pro-con:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.pro-con1 p {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.pro-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.pro-con1 span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.star {
+  color: #ffd700;
+  font-size: 16px;
+}
+
+.pro-con2 p {
+  font-size: 18px;
+  color: #ff4757;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pro-con2 p span {
+  text-decoration: line-through;
+  color: #888888;
+  margin-left: 10px;
+}
+
+.won {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.won p {
+  font-size: 14px;
+  color: #888888;
+  font-weight: 400;
+}
+
+.won2 {
+  font-size: 36px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff4757, #ff3742);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.won2 p {
+  font-size: 14px;
+  color: #ff4757;
+  font-weight: 600;
+}
+
+.pro-con3 p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2ed573;
+  margin-bottom: 5px;
+}
+
+.pro-con3 span {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.pro-con4 p,
+.pro-con5 p {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.product-option-select {
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-option-select:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.product-option-select option {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.quantity-control-area {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.quantity-input-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.quantity-btn {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #ffffff, #cccccc);
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quantity-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.quantity-input {
+  width: 80px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  outline: none;
+}
+
+.total-price-area {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-price-area p {
+  font-size: 18px;
+  color: #cccccc;
+}
+
+.total-price {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ff4757, #ff3742);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pay {
+  display: flex;
+  gap: 20px;
+}
+
+.cart,
+.buy {
+  flex: 1;
+}
+
+.cart a,
+.buy a {
+  display: block;
+  padding: 18px 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cart a {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.cart a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.buy a {
+  background: linear-gradient(135deg, #ff4757, #ff3742);
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+
+.buy a:hover {
+  background: linear-gradient(135deg, #ff3742, #ff2f3a);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 71, 87, 0.4);
+}
+
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 40px;
+  }
+
+  .product-image-area,
+  .all-con {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+  }
+
+  .main-image-container {
+    height: 300px;
+  }
+
+  .pro-text {
+    font-size: 20px;
+  }
+
+  .won {
+    font-size: 24px;
+  }
+
+  .won2 {
+    font-size: 28px;
+  }
+
+  .pay {
+    flex-direction: column;
+  }
+
+  .quantity-control-area {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .total-price-area {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pro-con {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.pro-con:nth-child(1) { animation-delay: 0.1s; }
+.pro-con:nth-child(2) { animation-delay: 0.2s; }
+.pro-con:nth-child(3) { animation-delay: 0.3s; }
+.pro-con:nth-child(4) { animation-delay: 0.4s; }
+.pro-con:nth-child(5) { animation-delay: 0.5s; }
+
+.quantity-control-area { animation-delay: 0.6s; }
+.total-price-area { animation-delay: 0.7s; }
+.pay { animation-delay: 0.8s; }

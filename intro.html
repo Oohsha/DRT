@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRT</title>
+  <link rel="shortcut icon" href="./images/DRT-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/intro.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">DRT</div>
+    <nav>
+      <ul>
+        <li><a href="./main.html">홈</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="./intro.html">소개</a></li>
+        <li><a href="./inquiry.html">문의</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">소개</h1>
+      <p class="hero-subtitle">
+        DRT는 단순한 기기를 넘어, <strong>당신의 사운드와 스타일을 완성</strong>합니다.<br>
+        이어폰부터 스피커까지, 매 순간을 특별하게 만드는 감각적인 디자인과<br>
+        섬세한 사운드 퀄리티를 담아냈습니다.
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <div class="slider">
+      <div class="slides" id="slides">
+        <img src="./images/DRT pro1.png" alt="DRT Pro 1">
+        <img src="./images/DRT pro2.png" alt="DRT Pro 2">
+        <img src="./images/DRT pro3.png" alt="DRT Pro 3">
+        <img src="./images/DRT pro4.png" alt="DRT Pro 4">
+      </div>
+      <div class="buttons">
+        <button onclick="moveSlide(-1)">❮</button>
+        <button onclick="moveSlide(1)">❯</button>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+
+    <section class="intro-section">
+      <h2 class="section-title">우리의 가치</h2>
+      <div class="intro-grid">
+        <div class="intro-card">
+          <div class="card-icon">♬</div>
+          <h3 class="card-title">탁월한 음질</h3>
+          <p class="card-description">
+            전문 오디오 엔지니어들이 세심하게 튜닝한 사운드로,
+            모든 장르의 음악을 가장 생생하고 자연스럽게 재현합니다.
+          </p>
+        </div>
+        <div class="intro-card">
+          <div class="card-icon">★</div>
+          <h3 class="card-title">혁신적 디자인</h3>
+          <p class="card-description">
+            미니멀하면서도 세련된 디자인으로, 기능성과 아름다움을
+            완벽하게 조화시킨 제품을 선보입니다.
+          </p>
+        </div>
+        <div class="intro-card">
+          <div class="card-icon">※</div>
+          <h3 class="card-title">최첨단 기술</h3>
+          <p class="card-description">
+            최신 기술력을 바탕으로 한 노이즈 캔슬링, 무선 연결,
+            배터리 효율성 등 모든 면에서 최고의 성능을 제공합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="company-info">
+      <div class="company-content">
+        <div class="company-text">
+          <h2>DRT의 이야기</h2>
+          <p>
+            2018년부터 시작된 DRT는 사운드에 대한 열정과 혁신적인 기술력으로
+            오디오 시장에 새로운 바람을 일으키고 있습니다.
+          </p>
+          <p>
+            우리는 단순히 제품을 만드는 것이 아니라, 사용자의 일상에 특별한
+            경험을 선사하는 것을 목표로 합니다. 매일 더 나은 사운드를 위해
+            연구하고 발전하는 DRT와 함께하세요.
+          </p>
+        </div>
+        <div class="company-stats">
+          <div class="stat-item">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">만족한 고객</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">제품 라인업</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">국가 진출</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">고객 만족도</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- 브랜드 섹션 -->
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">DRT</a>
+          <p class="footer-description">
+            프리미엄 오디오와 모바일 기술의 완벽한 조화를 추구하는 DRT입니다.
+            혁신적인 기술과 세련된 디자인으로 최고의 사용자 경험을 제공합니다.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="페이스북">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="인스타그램">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="유튜브">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="트위터">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 제품 섹션 -->
+        <div class="footer-section">
+          <h3>제품</h3>
+          <ul class="footer-links">
+            <li><a href="#">이어폰</a></li>
+            <li><a href="#">헤드셋</a></li>
+            <li><a href="#">스마트폰</a></li>
+            <li><a href="#">액세서리</a></li>
+            <li><a href="#">신제품</a></li>
+            <li><a href="#">베스트셀러</a></li>
+          </ul>
+        </div>
+
+        <!-- 지원 섹션 -->
+        <div class="footer-section">
+          <h3>지원</h3>
+          <ul class="footer-links">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="./inquiry.html">문의하기</a></li>
+            <li><a href="#">사용자 가이드</a></li>
+            <li><a href="#">보증 정책</a></li>
+            <li><a href="#">수리 서비스</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- 회사 정보 섹션 -->
+        <div class="footer-section">
+          <h3>연락처</h3>
+          <div class="footer-contact-info">
+            <p><strong>이메일:</strong><br>sdh250415@sdh.hs.kr</p>
+            <p><strong>전화:</strong><br>010-9678-0371</p>
+            <p><strong>주소:</strong><br>서울특별시 중랑구<br>중랑천로 218<br>백운아트빌 3층</p>
+            <p><strong>운영시간:</strong><br>월-금: 09:00 - 18:00<br>토,일: 휴무</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 하단 정보 -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>&copy; 2025 DRT. All rights reserved.</p>
+        </div>
+        <div class="footer-legal">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이용약관</a>
+          <a href="#">쿠키 정책</a>
+          <a href="#">사이트맵</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script/intro.js"></script>
+</body>
+
+</html>

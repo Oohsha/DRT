@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRT - 결제</title>
+    <link rel="stylesheet" href="./css/pay.css">
+    <link rel="shortcut icon" href="./images/DRT-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">DRT</div>
+        <nav>
+            <ul>
+                <div class="con">
+                    <li><a class="main-nav" href="./main.html">홈</a></li>
+                    <li class="drop">
+                        <a class="main-nav" href="./DI.html">이어폰</a>
+                        <ul class="drop-nav">
+                            <li><a href="#pro1">DI21</a></li>
+                            <li><a href="#pro2">DI22</a></li>
+                            <li><a href="#pro3">DI23</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop">
+                        <a class="main-nav" href="#">헤드셋</a>
+                        <ul class="drop-nav">
+                            <li><a href="#pro1">DHed21</a></li>
+                            <li><a href="#pro2">DHed22</a></li>
+                            <li><a href="#pro3">DHed23</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop">
+                        <a class="main-nav" href="#">핸드폰</a>
+                        <ul class="drop-nav">
+                            <li><a href="#pro1">DR21</a></li>
+                            <li><a href="#pro2">DR22</a></li>
+                            <li><a href="#pro3">DR23</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="main-nav" href="./inquiry.html">문의</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="payment-container">
+        <div class="payment-form-section">
+            <h1 class="page-title">결제하기</h1>
+
+            <form id="paymentForm">
+                <div class="form-section">
+                    <h2 class="section-title">주문자 정보</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="orderName">이름</label>
+                            <input type="text" id="orderName" name="orderName" placeholder="주문자 이름을 입력하세요" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderPhone">연락처</label>
+                            <input type="tel" id="orderPhone" name="orderPhone" placeholder="010-0000-0000" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderEmail">이메일</label>
+                        <input type="email" id="orderEmail" name="orderEmail" placeholder="example@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="section-title">배송 정보</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="recipientName">받는 분</label>
+                            <input type="text" id="recipientName" name="recipientName" placeholder="받는 분 이름" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipientPhone">연락처</label>
+                            <input type="tel" id="recipientPhone" name="recipientPhone" placeholder="010-0000-0000"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zipCode">우편번호</label>
+                            <input type="text" id="zipCode" name="zipCode" placeholder="우편번호" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">주소</label>
+                            <input type="text" id="address" name="address" placeholder="기본 주소" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="detailAddress">상세주소</label>
+                        <input type="text" id="detailAddress" name="detailAddress" placeholder="상세 주소">
+                    </div>
+                    <div class="form-group">
+                        <label for="deliveryMessage">배송 메시지</label>
+                        <textarea id="deliveryMessage" name="deliveryMessage"
+                            placeholder="배송 시 요청사항을 입력하세요 (선택사항)"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="section-title">결제 방법</h2>
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <input type="radio" id="card" name="paymentMethod" value="card" checked>
+                            <label for="card">신용카드</label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="kakao" name="paymentMethod" value="kakao">
+                            <label for="kakao">카카오페이</label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="naver" name="paymentMethod" value="naver">
+                            <label for="naver">네이버페이</label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="bank" name="paymentMethod" value="bank">
+                            <label for="bank">무통장입금</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="section-title">약관 동의</h2>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="agreeTerms" required
+                                style="width: auto; height: auto; margin-right: 10px;">
+                            구매조건 확인 및 결제진행에 동의 (필수)
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="agreePrivacy" required
+                                style="width: auto; height: auto; margin-right: 10px;">
+                            개인정보 수집 및 이용에 동의 (필수)
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="order-summary-section">
+            <div class="order-summary">
+                <h2 class="section-title">주문 상품</h2>
+
+                <div class="order-item">
+                    <div class="item-image">
+                        <img src="images/DRT pro1.png" alt="DRT 이어폰">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-name">DRT 노이즈 캔슬링 무선 블루투스 5.3 DI21 이어폰</div>
+                        <div class="item-options">색상: 화이트 / 수량: 1개</div>
+                        <div class="item-price">100,990원</div>
+                    </div>
+                </div>
+
+                <div class="price-breakdown">
+                    <div class="price-row">
+                        <span>상품금액</span>
+                        <span>110,880원</span>
+                    </div>
+                    <div class="price-row">
+                        <span>배송비</span>
+                        <span>무료</span>
+                    </div>
+                    <div class="price-row">
+                        <span>할인금액</span>
+                        <span style="color: #2ed573;">-9,890원</span>
+                    </div>
+                    <div class="price-row total">
+                        <span>총 결제금액</span>
+                        <span>100,990원</span>
+                    </div>
+                </div>
+
+                <button type="submit" form="paymentForm" class="submit-btn">
+                    100,990원 결제하기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/pay.js"></script>
+</body>
+
+</html>
